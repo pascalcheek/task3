@@ -9,13 +9,13 @@
 <body>
 <div class="Content">
     <header class="header" id="screen1">
-        <img class="logo" />
+        <img class="logo" width = "40px" height= "40px"  >
         <div class="menu">
-            <a href = '#' class="menu-about">About me</a>
-            <a href = '#' class="menu-education">Education</a>
-            <a href = '#' class="menu-work">Work Experience</a>
-            <a href = '#' class="menu-skills">Skills</a>
-            <a href = '#' class="menu-contacts">Contacts</a>
+            <a href = '#screen2' class="menu-about">About me</a>
+            <a href = '#screen3' class="menu-education">Education</a>
+            <a href = '#screen4' class="menu-work">Work Experience</a>
+            <a href = '#screen5' class="menu-skills">Skills</a>
+            <a href = '#screen6' class="menu-contacts">Contacts</a>
         </div>
     </header>
     <section class="about" id="screen2">
@@ -24,7 +24,7 @@
             My name is Alex Smith<br>
             I'm creative front-end developer
         </p>
-        <img class="Image" />
+        <img class="Image" width = "1140px" height= "400px">
     </section>
     <section class="education" id="screen3">
         <div class="text-very-big" style="line-height: 48px;">Education</div>
@@ -111,31 +111,31 @@
                 <div class="skill-item">
                     <div class="skill-name">React</div>
                     <div class="skill-value-wrap">
-                        <div class="bar value-react"></div>
+                        <div style="width: 90%" class="bar"></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-name">Angular</div>
                     <div class="skill-value-wrap">
-                        <div class="bar value-angular"></div>
+                        <div style="width: 70%" class="bar"></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-name">HTML + CSS</div>
                     <div class="skill-value-wrap">
-                        <div class="bar value-html-css"></div>
+                        <div style="width: 100%" class="bar"></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-name">Javascript</div>
                     <div class="skill-value-wrap">
-                        <div class="bar value-javascript"></div>
+                        <div style="width: 20%" class="bar"></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-name">Python</div>
                     <div class="skill-value-wrap">
-                        <div class="bar value-python"></div>
+                        <div style="width: 25%" class="bar"></div>
                     </div>
                 </div>
             </div>
@@ -143,31 +143,31 @@
                 <div class="skill-item">
                     <div class="skill-name">Soft skill</div>
                     <div class="skill-value-wrap">
-                        <div class="bar value-soft-skill"></div>
+                        <div style="width: 80%" class="bar"></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-name">Motion graphics</div>
                     <div class="skill-value-wrap">
-                        <div class="bar value-motion-graphics"></div>
+                        <div style="width: 60%" class="bar"></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-name">UX</div>
                     <div class="skill-value-wrap">
-                        <div class="bar value-ux"></div>
+                        <div style="width: 20%" class="bar"></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-name">UI</div>
                     <div class="skill-value-wrap">
-                        <div class="bar value-ui"></div>
+                        <div style="width: 50%" class="bar"></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-name">3D</div>
                     <div class="skill-value-wrap">
-                        <div class="bar value-3d"></div>
+                        <div style="width: 25%" class="bar"></div>
                     </div>
                 </div>
             </div>
@@ -178,11 +178,15 @@
             <div class="row" style="height: 80px">
                 <div class="form-field">
                     <div class="text-normal">Skill name</div>
-                    <div class="text-field-wrapper"></div>
+                    <label>
+                        <input class="text-field-wrapper">
+                    </label>
                 </div>
                 <div class="form-field">
                     <div class="text-normal">Skill proficiency percentage, %</div>
-                    <div class="text-field-wrapper"></div>
+                    <label>
+                        <input class="text-field-wrapper">
+                    </label>
                 </div>
                 <div class="btn" style="height: 48px">Add</div>
             </div>
@@ -193,7 +197,7 @@
         <div class="contacts-box" style="height: 400px; gap:32px">
             <a href="#">
                 <div class="info-box">
-                    <img class="pic-pin"/>
+                    <img class="pic-pin" width="40" height="40">
                     <div class="header-contacts">
                         <div class="text-big-contacts">Address</div>
                         <div class="text-subheader-contacts">16 Lva Tolstogo str., Moscow</div>
@@ -202,7 +206,7 @@
             </a>
             <a href="#">
                 <div class="info-box">
-                    <img class="pic-phone"/>
+                    <img class="pic-phone" width="41" height="40">
                     <div class="header-contacts">
                         <div class="text-big-contacts">Phone</div>
                         <div class="text-subheader-contacts">+7 (000) 000 00 00</div>
@@ -211,7 +215,7 @@
             </a>
             <a href="#">
                 <div class="info-box">
-                    <img class="pic-mail"/>
+                    <img class="pic-mail" width="41" height="40">
                     <div class="header-contacts">
                         <div class="text-big-contacts">E-Mail</div>
                         <div class="text-subheader-contacts">myemail@yandex.ru</div>
@@ -223,16 +227,16 @@
     <div class="footer" id='screen7'>
         <div class="footer-links">
             <a href="#">
-                <img class="pic-instagram"/>
+                <img class="pic-instagram" width="24px" height="24px">
             </a>
             <a href="#">
-                <img class="pic-github"/>
+                <img class="pic-github" width="24" height="24">
             </a>
             <a href="#">
-                <img class="pic-twitter"/>
+                <img class="pic-twitter" width="24" height="24">
             </a>
             <a href="#">
-                <img class="pic-linkedin"/>
+                <img class="pic-linkedin" width="24" height="24">
             </a>
 
         </div>
