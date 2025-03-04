@@ -807,3 +807,7 @@ a {
     color: #363E45;
     text-decoration: none; /* no underline */
 }
+
+.parag {
+    margin: 0;
+}

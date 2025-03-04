@@ -9,7 +9,7 @@
 <body>
 <div class="Content">
     <header class="header" id="screen1">
-        <img class="logo" width = "40px" height= "40px"  >
+        <img class="logo" width = "40" height= "40"  >
         <div class="menu">
             <a href = '#screen2' class="menu-about">About me</a>
             <a href = '#screen3' class="menu-education">Education</a>
@@ -24,56 +24,56 @@
             My name is Alex Smith<br>
             I'm creative front-end developer
         </p>
-        <img class="Image" width = "1140px" height= "400px">
+        <img class="Image" width = "1140" height= "400">
     </section>
     <section class="education" id="screen3">
         <div class="text-very-big" style="line-height: 48px;">Education</div>
         <div class="educations-table">
             <div class="col">
-                <div class="education-cell">
+                <section class="education-cell">
                     <div class="education-cell-header">
                         <div class="text-big">Kingston university</div>
                         <div class="text-subheader">Master's degree - Software Engineering</div>
                     </div>
-                    <div class="text-year">2019 - 2021</div>
-                </div>
-                <div class="education-cell">
+                    <time class="text-year" datetime="2019-2021">2019 - 2021</time>
+                </section>
+                <section class="education-cell">
                     <div class="education-cell-header">
                         <div class="text-big">Kingston university</div>
                         <div class="text-subheader">Bachelor's degree - Computer Engineering</div>
                     </div>
-                    <div class="text-year">2015 - 2019</div>
-                </div>
-                <div class="education-cell">
+                    <time class="text-year" datetime="2015-2019">2015 - 2019</time>
+                </section>
+                <section class="education-cell">
                     <div class="education-cell-header">
                         <div class="text-big">Westminster School</div>
                         <div class="text-subheader">Diploma's degree - Mathematics</div>
                     </div>
-                    <div class="text-year">2013 - 2015</div>
-                </div>
+                    <time class="text-year" datetime="2013-2015">2013 - 2015</time>
+                </section>
             </div>
             <div class="col">
-                <div class="education-cell">
+                <section class="education-cell">
                     <div class="education-cell-header">
                         <div class="text-big">Kingston university</div>
                         <div class="text-subheader">Master's degree - Software Engineering</div>
                     </div>
-                    <div class="text-year">2019 - 2021</div>
-                </div>
-                <div class="education-cell">
+                    <time class="text-year" datetime="2019-2021">2019 - 2021</time>
+                </section>
+                <section class="education-cell">
                     <div class="education-cell-header">
                         <div class="text-big">Kingston university</div>
                         <div class="text-subheader">Bachelor's degree - Computer Engineering</div>
                     </div>
-                    <div class="text-year">2015 - 2019</div>
-                </div>
-                <div class="education-cell">
+                    <time class="text-year" datetime="2015-2019">2015 - 2019</time>
+                </section>
+                <section class="education-cell">
                     <div class="education-cell-header">
                         <div class="text-big">Westminster School</div>
                         <div class="text-subheader">Diploma's degree - Mathematics</div>
                     </div>
-                    <div class="text-year">2013 - 2015</div>
-                </div>
+                    <time class="text-year" datetime="2013-2015">2013 - 2015</time>
+                </section>
             </div>
         </div>
     </section>
@@ -92,7 +92,7 @@
                 </div>
                 <div class="text-year-2">Nov 2020 - Present · Full-time</div>
                 <div class="text1">
-                    <p style="margin: 0">В начале XX века немецкие психологи провели исследования восприятия человеком окружающего
+                    <p class="parag">В начале XX века немецкие психологи провели исследования восприятия человеком окружающего
                     мира. Они выявили естественное стремление человека найти порядок в беспорядке.</p>
                     <p>Их эксперименты
                     показали, что когда мозг обрабатывает полученные образы, он воспринимает разрозненные элементы как единое
@@ -173,29 +173,29 @@
             </div>
 
         </div>
-        <div class="skills-form">
+        <form class="skills-form">
             <div class="text-big-skill">Add new skill</div>
-            <div class="row" style="height: 80px">
+
+            <div class="row">
                 <div class="form-field">
-                    <div class="text-normal">Skill name</div>
-                    <label>
-                        <input class="text-field-wrapper">
-                    </label>
+                    <label for="skill-name" class="text-normal">Skill name</label>
+                    <input type="text" id="skill-name" class="text-field-wrapper" required>
                 </div>
+
                 <div class="form-field">
-                    <div class="text-normal">Skill proficiency percentage, %</div>
-                    <label>
-                        <input class="text-field-wrapper">
-                    </label>
+                    <label for="skill-percentage" class="text-normal">Skill proficiency percentage, %</label>
+                    <input type="number" id="skill-percentage" class="text-field-wrapper" min="0" max="100" required>
                 </div>
-                <div class="btn" style="height: 48px">Add</div>
+
+                <button type="submit" class="btn">Add</button>
             </div>
-        </div>
+        </form>
+
     </section>
     <section class="block" id='screen6'>
         <div class="text-very-big" style="line-height: 48px">Contacts</div>
         <div class="contacts-box" style="height: 400px; gap:32px">
-            <a href="#">
+            <a href="https://yandex.com.tr/harita/-/CHBBFVli">
                 <div class="info-box">
                     <img class="pic-pin" width="40" height="40">
                     <div class="header-contacts">
@@ -204,7 +204,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#">
+            <a href="tel:+70000000000">
                 <div class="info-box">
                     <img class="pic-phone" width="41" height="40">
                     <div class="header-contacts">
@@ -213,7 +213,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#">
+            <a href="mailto:myemail@yandex.ru">
                 <div class="info-box">
                     <img class="pic-mail" width="41" height="40">
                     <div class="header-contacts">
@@ -226,16 +226,16 @@
     </section>
     <div class="footer" id='screen7'>
         <div class="footer-links">
-            <a href="#">
-                <img class="pic-instagram" width="24px" height="24px">
+            <a href="https://www.instagram.com/">
+                <img class="pic-instagram" width="24" height="24">
             </a>
-            <a href="#">
+            <a href="https://github.com/">
                 <img class="pic-github" width="24" height="24">
             </a>
-            <a href="#">
+            <a href="https://x.com/">
                 <img class="pic-twitter" width="24" height="24">
             </a>
-            <a href="#">
+            <a href="https://ru.linkedin.com/">
                 <img class="pic-linkedin" width="24" height="24">
             </a>
 
